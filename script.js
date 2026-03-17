@@ -15,7 +15,13 @@
 // 2nd way
 let input= document.querySelector("input");
 let selector= document.getElementById("colorSelect");
+// let options=document.querySelectorAll("option");
+
 input.addEventListener("click",(e)=>{
-	let option=selector.value;
+	let val=selector.value;
+	let option=document.querySelector(`[value=${val}]`);
+	// console.log(option);
 	option.remove();
+
+	
 })
